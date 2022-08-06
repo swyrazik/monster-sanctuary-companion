@@ -1,19 +1,11 @@
 plugins {
-    id("java")
+    com.swyrazik.monstersanctuary.companion.`java-convention`
 }
 
 group = "com.swyrazik.monstersanctuary"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     testImplementation(libs.junit.api)
     testRuntimeOnly(libs.junit.engine)
-}
-
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
 }
