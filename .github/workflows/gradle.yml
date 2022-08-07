@@ -37,5 +37,5 @@ jobs:
         arguments: build --show-version
         
     - name: Report test results
-      uses: mikepenz/action-junit-report@v3.2
+      uses: mikepenz/action-junit-report@v3.2.0
       if: always()
