@@ -9,4 +9,9 @@ public class DockerBasedTest {
     void test() {
         Assertions.fail(new RuntimeException("WHOOPS"));
     }
+    
+    @Test
+    void test2() {
+    
+    }
 }

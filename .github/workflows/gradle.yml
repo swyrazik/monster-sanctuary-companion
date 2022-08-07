@@ -39,3 +39,5 @@ jobs:
     - name: Report test results
       uses: mikepenz/action-junit-report@v3.2.0
       if: always()
+      with:
+        report_paths: '**/build/test-results/test/TEST-*.xml'
