@@ -30,8 +30,12 @@ jobs:
         java-version: '18'
         distribution: 'temurin'
     
-    - name: Build with Gradle
+    - name: Build (assemble & verify) with Gradle
       uses: gradle/gradle-build-action@v2.2.2
       # By default, the action will use the Gradle wrapper (and version) found in the project
       with:
         arguments: build --show-version
+        
+    - name: Report test results
+      uses: mikepenz/action-junit-report@v3.2
+      if: always()
