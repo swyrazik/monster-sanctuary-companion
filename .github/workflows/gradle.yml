@@ -41,3 +41,4 @@ jobs:
       if: always()
       with:
         report_paths: '**/build/test-results/test/TEST-*.xml'
+        annotate_only: true
