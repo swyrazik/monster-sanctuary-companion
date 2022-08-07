@@ -1,5 +1,9 @@
 rootProject.name = "monster-sanctuary-companion"
 
+// Sub-projects
+include("server")
+
+// Dependencies
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
