@@ -2,6 +2,7 @@ rootProject.name = "monster-sanctuary-companion"
 
 // Sub-projects
 include("server")
+include("testing:end-to-end:api")
 include("testing:end-to-end:tests")
 
 // Dependencies

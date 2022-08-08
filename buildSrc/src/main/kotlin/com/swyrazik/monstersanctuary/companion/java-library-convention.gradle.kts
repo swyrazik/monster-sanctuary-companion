@@ -2,6 +2,7 @@ package com.swyrazik.monstersanctuary.companion
 
 plugins {
     java
+    `java-library`
 }
 
 java {

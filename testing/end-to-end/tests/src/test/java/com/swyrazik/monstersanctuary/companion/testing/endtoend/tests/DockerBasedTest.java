@@ -3,8 +3,6 @@ package com.swyrazik.monstersanctuary.companion.testing.endtoend.tests;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.jupiter.api.Test;
-
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.core.DefaultDockerClientConfig;
@@ -12,10 +10,11 @@ import com.github.dockerjava.core.DockerClientConfig;
 import com.github.dockerjava.core.DockerClientImpl;
 import com.github.dockerjava.httpclient5.ApacheDockerHttpClient;
 import com.github.dockerjava.transport.DockerHttpClient;
+import com.swyrazik.monstersanctuary.companion.testing.endtoend.api.EndToEndTest;
 
 public class DockerBasedTest {
     
-    @Test
+    @EndToEndTest
     void test() {
         System.out.println("Running TEST...");
         try (DockerClient dockerClient = createDockerClient()) {
