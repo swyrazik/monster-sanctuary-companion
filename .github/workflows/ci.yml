@@ -73,11 +73,11 @@ jobs:
         if: failure()
         with:
           name: test-results
-          path: '**/build/test-results/test/TEST-*.xml'
+          path: '**/build/test-results/testE2E/TEST-*.xml'
 
       - name: Report test results
         uses: mikepenz/action-junit-report@v3.2.0
         if: always()
         with:
-          report_paths: '**/build/test-results/test/TEST-*.xml'
+          report_paths: '**/build/test-results/testE2E/TEST-*.xml'
           annotate_only: true
